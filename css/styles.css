@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'StardewValley';
+    src: url('/assets/fonts/StardewValley.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'StardewValley', sans-serif;
+}
+
+.hero-section {
+    background-image: url(/assets/Background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'StardewValley', sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.servers-section {
+    background-image: url(/assets/Servers_Backgrounds.jpeg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    font-family: 'StardewValley', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.yt-section {
+    font-family: 'StardewValley', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(/assets/hannah-oates-brick-wall-wip.jpg);
+    background-repeat: repeat;
+}
+
+.ventajas-delta {
+    font-family: 'StardewValley', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(/assets/Background_2.gif);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: rgba(104, 36, 22, 0.5);
+    --bs-navbar-padding-y: 0.1rem !important;
+}
+
+.card {
+    --bs-card-border-width: 0px !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 6rem !important;
+    align-self: center
+}
+
+.card-server {
+    background-image: url(/assets/textbox1.png) !important;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(104, 36, 22, 0.5);
+    text-align: left;
+}
+
+.card-ventajas {
+    background-image: url(/assets/textbox.png) !important;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    color: #8F461E !important;
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.5);
+    text-align: left;
+    opacity: 0.9;
+}
+
+.carousel-item img{
+    border-radius: 6px;
+}
