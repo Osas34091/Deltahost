@@ -81,7 +81,7 @@ html {
 }
 
 .card-ventajas {
-    background-image: url(../assets/Textbox.png) !important;
+    background-image: url(../assets/textbox.png) !important;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,6 +96,7 @@ html {
     border-radius: 6px;
 
 }
+
 
 
 
