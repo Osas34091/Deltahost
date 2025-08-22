@@ -102,11 +102,11 @@ html {
 }
 
 .falling-leaves {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   pointer-events: none;
   overflow: hidden;
   z-index: 10;
@@ -137,6 +137,7 @@ html {
   0%   { transform: translateY(0) rotate(0deg); }
   100% { transform: translateY(120vh) rotate(360deg); }
 }
+
 
 
 
