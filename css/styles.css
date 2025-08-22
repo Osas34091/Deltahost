@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'StardewValley';
-    src: url('/assets/fonts/StardewValley.ttf') format('truetype');
+    src: url('assets/fonts/StardewValley.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ html {
 }
 
 .hero-section {
-    background-image: url(/assets/Background_1.jpg);
+    background-image: url(assets/Background_1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ html {
 }
 
 .servers-section {
-    background-image: url(/assets/Servers_Backgrounds.jpeg);
+    background-image: url(assets/Servers_Backgrounds.jpeg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -36,14 +36,14 @@ html {
 .yt-section {
     font-family: 'StardewValley', sans-serif;
     text-shadow: 1px 1px 1px black;
-    background-image: url(/assets/hannah-oates-brick-wall-wip.jpg);
+    background-image: url(assets/hannah-oates-brick-wall-wip.jpg);
     background-repeat: repeat;
 }
 
 .ventajas-delta {
     font-family: 'StardewValley', sans-serif;
     text-shadow: 1px 1px 1px black;
-    background-image: url(/assets/Background_2.gif);
+    background-image: url(assets/Background_2.gif);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@ html {
 }
 
 .card-server {
-    background-image: url(/assets/textbox1.png) !important;
+    background-image: url(assets/textbox1.png) !important;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ html {
 }
 
 .card-ventajas {
-    background-image: url(/assets/textbox.png) !important;
+    background-image: url(assets/textbox.png) !important;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,4 +94,5 @@ html {
 
 .carousel-item img{
     border-radius: 6px;
+
 }
