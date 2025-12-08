@@ -1,0 +1,151 @@
+/* ==== CYBER NIGHT CUSTOM XBOX CONTROLLER SKIN ==== */
+/* Basado en minimal-xbox.css por mrmcpowned */
+/* Mod por ChatGPT — neon purple + cyan accents */
+
+/* General layout */
+.controller.xbox {
+  width: 700px;
+  height: 450px;
+  position: relative;
+  margin: 30px auto;
+
+  /* NEW custom background */
+  background: radial-gradient(circle at center, #111 0%, #000 80%);
+  border-radius: 25px;
+  box-shadow:
+    0 0 40px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(140, 0, 255, 0.2);
+}
+
+/* Neutral buttons color */
+.controller.xbox .button {
+  background: #181818;
+  border-radius: 50%;
+  border: 2px solid #2f2f2f;
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.4),
+    inset 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: 0.15s ease;
+}
+
+/* Glow when pressed */
+.controller.xbox .button.pressed {
+  background: #99eaff;
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.9),
+    inset 0 0 10px rgba(0, 0, 0, 0.8);
+  transform: scale(0.95);
+}
+
+/* Custom ABXY colors (neon) */
+.controller.xbox .button.a {
+  background: #00ffa6;
+  border-color: #00c07d;
+  box-shadow: 0 0 20px rgba(0,255,170,0.6);
+}
+.controller.xbox .button.b {
+  background: #ff0088;
+  border-color: #c00060;
+  box-shadow: 0 0 20px rgba(255,0,140,0.6);
+}
+.controller.xbox .button.x {
+  background: #00c9ff;
+  border-color: #0096c7;
+  box-shadow: 0 0 20px rgba(0,200,255,0.6);
+}
+.controller.xbox .button.y {
+  background: #bd00ff;
+  border-color: #7f00b2;
+  box-shadow: 0 0 20px rgba(190,0,255,0.6);
+}
+
+/* Pressed animation for ABXY */
+.controller.xbox .button.a.pressed,
+.controller.xbox .button.b.pressed,
+.controller.xbox .button.x.pressed,
+.controller.xbox .button.y.pressed {
+  filter: brightness(1.3);
+  transform: scale(0.92);
+}
+
+/* D-Pad styling */
+.controller.xbox .dpad {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow:
+    0 0 20px rgba(140, 0, 255, 0.4),
+    inset 0 0 10px #000;
+}
+.controller.xbox .dpad .pressed {
+  background: #8e2bff;
+  box-shadow: 0 0 20px rgba(160, 70, 255, 0.9);
+}
+
+/* Sticks */
+.controller.xbox .stick {
+  background: #101010;
+  border: 3px solid #333;
+  box-shadow: inset 0 0 15px #000;
+}
+.controller.xbox .stick.pressed {
+  background: #6a00ff;
+  box-shadow:
+    0 0 20px rgba(140, 0, 255, 0.8),
+    inset 0 0 10px #000;
+}
+
+/* Bumpers (LB / RB) */
+.controller.xbox .bumper {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px #000;
+}
+.controller.xbox .bumper.pressed {
+  background: #00eaff;
+  box-shadow:
+    0 0 20px rgba(0,255,255,0.7),
+    inset 0 0 10px #000;
+}
+
+/* Triggers (LT / RT) */
+.controller.xbox .trigger {
+  background: #171717;
+  border: 2px solid #333;
+  border-radius: 12px;
+  box-shadow: inset 0 0 25px #000;
+}
+.controller.xbox .trigger.pressed {
+  background: #0099ff;
+  box-shadow:
+    0 0 20px rgba(0,150,255,0.8),
+    inset 0 0 10px #000;
+}
+
+/* Xbox Logo Button */
+.controller.xbox .xbox {
+  background: radial-gradient(circle, #00eaff, #0066ff);
+  border-radius: 50%;
+  box-shadow:
+    0 0 40px rgba(0,170,255,0.9),
+    inset 0 0 20px #000;
+  transition: 0.15s;
+}
+.controller.xbox .xbox.pressed {
+  filter: brightness(1.4);
+  transform: scale(0.9);
+}
+
+/* Menu / View */
+.controller.xbox .face {
+  background: #1b1b1b;
+  border: 2px solid #333;
+  box-shadow: inset 0 0 10px #000;
+}
+.controller.xbox .face.pressed {
+  background: #ff00c8;
+  box-shadow:
+    0 0 20px rgba(255,0,200,0.9),
+    inset 0 0 10px #000;
+}
