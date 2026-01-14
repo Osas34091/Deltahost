@@ -1,0 +1,335 @@
+:root {
+    --bg-dark: #14141C;
+    --bg-card: #1C1C29;
+    --accent-blue: #3B6CDE;
+    --text-muted: #aab2bd;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.brand-font {
+    font-family: 'StardewValley', cursive;
+    letter-spacing: 0.5px;
+}
+
+.text-accent {
+    color: var(--accent-blue) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--bg-dark) !important;
+}
+
+.bg-darker {
+    background-color: #0e0e14 !important;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}
+
+.btn-accent {
+    background-color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: transparent;
+    color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(59, 108, 222, 0.4);
+}
+
+.btn-outline-accent {
+    background-color: transparent;
+    border: 2px solid var(--accent-blue);
+    color: var(--accent-blue);
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    box-shadow: 0 0 15px rgba(59, 108, 222, 0.4);
+}
+
+.btn-xl {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.navbar {
+
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: color 0.2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent-blue) !important;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    background: url('https://images.steamusercontent.com/ugc/2310974141604980016/B4EF3A7A2D1772DE26B1A6F51CE33A04FD8BB917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false') no-repeat center center;
+    background-size: cover;
+    border-bottom: 2px solid var(--accent-blue);
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--bg-dark) 30%, rgba(20, 20, 28, 0.8) 100%);
+}
+
+.minecraft-hero-img {
+    border: 3px solid var(--accent-blue);
+    animation: rotateAndFloat 12s linear infinite;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 30px rgba(59, 108, 222, 0.2);
+    display: inline-block;
+}
+
+@keyframes rotateAndFloat {
+    0% {
+        transform: perspective(1000px) rotateY(0deg) translateY(0px);
+    }
+
+    25% {
+        transform: perspective(1000px) rotateY(90deg) translateY(-10px);
+    }
+
+    50% {
+        transform: perspective(1000px) rotateY(180deg) translateY(-20px);
+    }
+
+    75% {
+        transform: perspective(1000px) rotateY(270deg) translateY(-10px);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg) translateY(0px);
+    }
+}
+
+.alert-bar {
+    background: rgba(59, 108, 222, 0.15);
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    padding: 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.plan-card {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+
+.plan-card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.plan-card.featured {
+    border-color: var(--accent-blue);
+    background: linear-gradient(145deg, var(--bg-card), rgba(59, 108, 222, 0.05));
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.plan-icon {
+    font-size: 3rem;
+    color: var(--text-muted);
+}
+
+.plan-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.price-tag .currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.price-tag .amount {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.price-tag .period {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.feature-list li i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.feature-grid-item {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.feature-grid-item:hover {
+    border-color: var(--accent-blue);
+    background-color: rgba(59, 108, 222, 0.05);
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+    margin-right: 1rem;
+    width: 30px;
+    text-align: center;
+}
+
+.feature-grid-item span {
+    font-size: 1.2rem;
+}
+
+.custom-footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 80px 0 50px 0;
+    font-family: 'StardewValley', sans-serif;
+}
+
+.footer-logo {
+    max-width: 220px;
+    height: auto;
+}
+
+.footer-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.4;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.custom-footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-list li a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .custom-footer {
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+}

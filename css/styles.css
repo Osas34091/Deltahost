@@ -64,7 +64,9 @@ html {
     text-align: center;
 }
 
-.card-img, .card-img-bottom, .card-img-top {
+.card-img,
+.card-img-bottom,
+.card-img-top {
     width: 6rem !important;
     align-self: center
 }
@@ -92,56 +94,247 @@ html {
     opacity: 0.9;
 }
 
-.carousel-item img{
+.carousel-item img {
     border-radius: 6px;
 
 }
 
 .sepiant {
-  filter: sepia(40%) saturate(120%) hue-rotate(-10deg) brightness(105%) contrast(105%);
+    filter: sepia(40%) saturate(120%) hue-rotate(-10deg) brightness(105%) contrast(105%);
 }
 
 .falling-leaves {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
 }
 
 .leaf {
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  animation: fall linear infinite;
-  transform-origin: top center;
-  opacity: 0.8;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    animation: fall linear infinite;
+    transform-origin: top center;
+    opacity: 0.8;
 }
 
-/* Individual leaf images */
-.leaf1 { background: url(../assets/leaves/img1.webp) no-repeat center/contain; animation-duration: 8s; animation-delay: 0s; left: 10%; }
-.leaf2 { background: url(../assets/leaves/img2.png) no-repeat center/contain; animation-duration: 10s; animation-delay: 2s; left: 20%; }
-.leaf3 { background: url(../assets/leaves/img3.png) no-repeat center/contain; animation-duration: 12s; animation-delay: 4s; left: 30%; }
-.leaf4 { background: url(../assets/leaves/img4.webp) no-repeat center/contain; animation-duration: 9s; animation-delay: 1s; left: 40%; }
-.leaf5 { background: url(../assets/leaves/img5.png) no-repeat center/contain; animation-duration: 7s; animation-delay: 3s; left: 50%; }
-.leaf6 { background: url(../assets/leaves/img6.png) no-repeat center/contain; animation-duration: 11s; animation-delay: 3s; left: 60%; }
-.leaf7 { background: url(../assets/leaves/img7.webp) no-repeat center/contain; animation-duration: 10s; animation-delay: 5s; left: 70%; }
-.leaf8 { background: url(../assets/leaves/img8.png) no-repeat center/contain; animation-duration: 9s; animation-delay: 2s; left: 80%; }
+.leaf1 {
+    background: url(../assets/leaves/img1.webp) no-repeat center/contain;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    left: 10%;
+}
+
+.leaf2 {
+    background: url(../assets/leaves/img2.png) no-repeat center/contain;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    left: 20%;
+}
+
+.leaf3 {
+    background: url(../assets/leaves/img3.png) no-repeat center/contain;
+    animation-duration: 12s;
+    animation-delay: 4s;
+    left: 30%;
+}
+
+.leaf4 {
+    background: url(../assets/leaves/img4.webp) no-repeat center/contain;
+    animation-duration: 9s;
+    animation-delay: 1s;
+    left: 40%;
+}
+
+.leaf5 {
+    background: url(../assets/leaves/img5.png) no-repeat center/contain;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    left: 50%;
+}
+
+.leaf6 {
+    background: url(../assets/leaves/img6.png) no-repeat center/contain;
+    animation-duration: 11s;
+    animation-delay: 3s;
+    left: 60%;
+}
+
+.leaf7 {
+    background: url(../assets/leaves/img7.webp) no-repeat center/contain;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    left: 70%;
+}
+
+.leaf8 {
+    background: url(../assets/leaves/img8.png) no-repeat center/contain;
+    animation-duration: 9s;
+    animation-delay: 2s;
+    left: 80%;
+}
 
 @keyframes fall {
-  0%   { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(120vh) rotate(360deg); }
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(120vh) rotate(360deg);
+    }
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+.carousel-custom {
+    padding-inline: 12%;
+    box-sizing: border-box;
+}
 
+@media (max-width: 992px) {
+    .carousel-custom {
+        padding-inline: 6%;
+    }
+}
 
+@media (max-width: 576px) {
+    .carousel-custom {
+        padding-inline: 3%;
+    }
+}
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* Controls (prev/next) responsive sizing and centered with flexbox */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 0 0.5rem;
+    pointer-events: auto;
+}
 
+.carousel-control-prev img,
+.carousel-control-next img {
+    display: block;
+    width: auto;
+    height: 48px;
+    max-height: 7vh;
+}
+
+@media (max-width: 576px) {
+
+    .carousel-control-prev img,
+    .carousel-control-next img {
+        height: 20px;
+        max-height: 8vh;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 0;
+    }
+}
+
+.custom-footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 80px 0 50px 0;
+    font-family: 'StardewValley', sans-serif;
+}
+
+.footer-logo {
+    max-width: 220px;
+    height: auto;
+}
+
+.footer-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.4;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.custom-footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-list li a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .custom-footer {
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+}
